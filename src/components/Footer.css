@@ -1,0 +1,99 @@
+.footer {
+  width: 100%;
+  height: max-content;
+  padding-bottom: 40px;
+  margin-bottom: 15px;
+  border-top: 1px solid gray;
+  margin-top: 90px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.footer > .top {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.top-head {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.top-head > p {
+  display: flex;
+}
+
+.btn-footer {
+  display: flex;
+  align-self: center;
+  width: 6%;
+  height: 5%;
+}
+
+.icon-bar {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-bar > .icon > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+}
+
+.foot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer > .foot-grid > div > ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer > .foot-grid > div > ul > li > a {
+  color: gray;
+  font-size: 14px;
+}
+
+
+
+
+@media screen and (max-width:1400px) {
+
+  .btn-footer {
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    height: 5%;
+  }
+  .btn-footer>a{
+    text-align: center;
+  }
+  
+}
+
+
+@media screen and (max-width:700px) {
+
+  .icon-bar {
+    width: 80%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .foot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+  }
+}
